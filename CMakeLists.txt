@@ -1,8 +1,8 @@
 idf_component_register(
     SRCS
-        "ota.c"
-        "remote_logging.c"
-        "wifi.c"
+        "ota.cpp"
+        "remote_logging.cpp"
+        "wifi.cpp"
     INCLUDE_DIRS
         "include"
     PRIV_REQUIRES
@@ -12,3 +12,5 @@ idf_component_register(
         esp_wifi
         nvs_flash
 )
+
+set(CMAKE_CXX_STANDARD 20)
