@@ -1,0 +1,14 @@
+idf_component_register(
+    SRCS
+        "ota.c"
+        "remote_logging.c"
+        "wifi.c"
+    INCLUDE_DIRS
+        "include"
+    PRIV_REQUIRES
+        app_update
+        esp_http_server
+        esp_timer
+        esp_wifi
+        nvs_flash
+)
